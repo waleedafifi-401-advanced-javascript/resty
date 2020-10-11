@@ -6,18 +6,16 @@ class Form extends React.Component {
     this.state = {
       method: '',
       url: '',
-      urlPlaceholder: '',
-      methodPlaceholder: ''
     }
   }
 
-  setMethod = e => this.setState({ methodPlaceholder: e.target.value })
+  setMethod = e => this.setState({ methodPlaceholder: e.target.value });
   setUrl = e => this.setState({ urlPlaceholder: e.target.value });
 
   showUrlAndMethod = e => {
     e.preventDefault();
-    this.setState({ url: this.state.urlPlaceholder })
-    this.setState({ method: this.state.methodPlaceholder })
+    this.setState({ url: this.state.urlPlaceholder });
+    this.setState({ method: this.state.methodPlaceholder });
   };
 
   render() {
