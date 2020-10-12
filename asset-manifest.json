@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/index.html/static/css/main.59c81a48.chunk.css",
-    "main.js": "/index.html/static/js/main.78838f1d.chunk.js",
-    "main.js.map": "/index.html/static/js/main.78838f1d.chunk.js.map",
-    "runtime-main.js": "/index.html/static/js/runtime-main.c5bee9d8.js",
-    "runtime-main.js.map": "/index.html/static/js/runtime-main.c5bee9d8.js.map",
-    "static/js/2.ad73c84a.chunk.js": "/index.html/static/js/2.ad73c84a.chunk.js",
-    "static/js/2.ad73c84a.chunk.js.map": "/index.html/static/js/2.ad73c84a.chunk.js.map",
-    "index.html": "/index.html/index.html",
-    "precache-manifest.89bc178fda0f2bc7b151e3ea4a9a63e4.js": "/index.html/precache-manifest.89bc178fda0f2bc7b151e3ea4a9a63e4.js",
-    "service-worker.js": "/index.html/service-worker.js",
-    "static/css/main.59c81a48.chunk.css.map": "/index.html/static/css/main.59c81a48.chunk.css.map",
-    "static/js/2.ad73c84a.chunk.js.LICENSE.txt": "/index.html/static/js/2.ad73c84a.chunk.js.LICENSE.txt"
+    "main.css": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/css/main.59c81a48.chunk.css",
+    "main.js": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/main.12d33e48.chunk.js",
+    "main.js.map": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/main.12d33e48.chunk.js.map",
+    "runtime-main.js": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/runtime-main.6a6071a9.js",
+    "runtime-main.js.map": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/runtime-main.6a6071a9.js.map",
+    "static/js/2.ad73c84a.chunk.js": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/2.ad73c84a.chunk.js",
+    "static/js/2.ad73c84a.chunk.js.map": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/2.ad73c84a.chunk.js.map",
+    "index.html": "/waleedafifi-401-advanced-javascript/resty/src/index.html/index.html",
+    "precache-manifest.852d2eb24effea6694e31b357fdc7914.js": "/waleedafifi-401-advanced-javascript/resty/src/index.html/precache-manifest.852d2eb24effea6694e31b357fdc7914.js",
+    "service-worker.js": "/waleedafifi-401-advanced-javascript/resty/src/index.html/service-worker.js",
+    "static/css/main.59c81a48.chunk.css.map": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/css/main.59c81a48.chunk.css.map",
+    "static/js/2.ad73c84a.chunk.js.LICENSE.txt": "/waleedafifi-401-advanced-javascript/resty/src/index.html/static/js/2.ad73c84a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c5bee9d8.js",
+    "static/js/runtime-main.6a6071a9.js",
     "static/js/2.ad73c84a.chunk.js",
     "static/css/main.59c81a48.chunk.css",
-    "static/js/main.78838f1d.chunk.js"
+    "static/js/main.12d33e48.chunk.js"
   ]
 }
