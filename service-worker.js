@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/waleedafifi-401-advanced-javascript/resty/src/index.html/precache-manifest.852d2eb24effea6694e31b357fdc7914.js"
+  "/waleedafifi-401-advanced-javascript/resty/src/index.js/precache-manifest.a7ae80911e8984a9d4eb9f2fc98b4ff2.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/waleedafifi-401-advanced-javascript/resty/src/index.html/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/waleedafifi-401-advanced-javascript/resty/src/index.js/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
