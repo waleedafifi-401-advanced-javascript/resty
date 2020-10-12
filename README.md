@@ -2,8 +2,7 @@
 
 **Author:** _Waleed A. Afifi_
 
-We begin the first of a 4-Phase build of the RESTy application, written in React. In this first phase, our goal is to setup the basic scaffolding of the application, with intent being to add more functionality to the system as we go. This initial build sets up the file structure so that we can progressively build this application in a scalable manner
-
+In phase 2, we will be connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests
 
 ### Setup
 ```
@@ -18,6 +17,13 @@ npm install
 npm start
 ```
 
+### How to use it
+On the website, enter a api request url, select a method, and press **Go**. The results will be displayed beneath. At the moment, every request will be a GET request. A sample url you can test is this:
+
+```
+https://swapi.dev/api/people/
+```
+
 #### UML
 
-![UML](./public/GitHub-assets/uml.jpg)
+![UML](./public/GitHub-assets/uml2.jpg)
