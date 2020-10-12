@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/waleedafifi-401-advanced-javascript/resty/static/css/main.59c81a48.chunk.css",
+    "main.js": "/waleedafifi-401-advanced-javascript/resty/static/js/main.ba3bf93f.chunk.js",
+    "main.js.map": "/waleedafifi-401-advanced-javascript/resty/static/js/main.ba3bf93f.chunk.js.map",
+    "runtime-main.js": "/waleedafifi-401-advanced-javascript/resty/static/js/runtime-main.e24b35fb.js",
+    "runtime-main.js.map": "/waleedafifi-401-advanced-javascript/resty/static/js/runtime-main.e24b35fb.js.map",
+    "static/js/2.ad73c84a.chunk.js": "/waleedafifi-401-advanced-javascript/resty/static/js/2.ad73c84a.chunk.js",
+    "static/js/2.ad73c84a.chunk.js.map": "/waleedafifi-401-advanced-javascript/resty/static/js/2.ad73c84a.chunk.js.map",
+    "index.html": "/waleedafifi-401-advanced-javascript/resty/index.html",
+    "precache-manifest.7248a3b0effca47241683dab6755187f.js": "/waleedafifi-401-advanced-javascript/resty/precache-manifest.7248a3b0effca47241683dab6755187f.js",
+    "service-worker.js": "/waleedafifi-401-advanced-javascript/resty/service-worker.js",
+    "static/css/main.59c81a48.chunk.css.map": "/waleedafifi-401-advanced-javascript/resty/static/css/main.59c81a48.chunk.css.map",
+    "static/js/2.ad73c84a.chunk.js.LICENSE.txt": "/waleedafifi-401-advanced-javascript/resty/static/js/2.ad73c84a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e24b35fb.js",
+    "static/js/2.ad73c84a.chunk.js",
+    "static/css/main.59c81a48.chunk.css",
+    "static/js/main.ba3bf93f.chunk.js"
+  ]
+}
