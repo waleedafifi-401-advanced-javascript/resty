@@ -1,0 +1,14 @@
+@import '../base.scss';
+
+.App-header {
+  background-color: #302D3C;
+  // margin: .3em;
+  // border-radius: .5em;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #F9F5F0;
+}

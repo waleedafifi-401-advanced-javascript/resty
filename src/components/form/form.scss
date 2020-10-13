@@ -1,0 +1,53 @@
+@import '../base.scss';
+
+.App-form {
+  display: flex;
+  flex-direction: column;
+  background: #D2C3C6;
+  // border-radius: .5em;
+  // margin: .5em;
+  padding: 1em;
+
+}
+
+.App-form > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  // flex: 1;
+}
+
+.App-form li {
+  margin: .5em;
+}
+
+.App-form > textarea {
+ border-radius: .5em;
+}
+
+.App-form > form {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.App-form input {
+  flex: 1;
+  border-radius: .5em;
+  margin-right: .5em;
+  margin-left: .5em;
+  padding-left: 1em;
+}
+
+.App-form button {
+  background: #F9F5F0;
+  border-radius: .5em;
+}
+
+.App-form p {
+  min-height: 20vh;
+  background-color: #F9F5F0;
+  border-radius: .5em;
+}
+
+
