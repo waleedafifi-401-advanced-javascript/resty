@@ -2,7 +2,10 @@
 
 **Author:** _Waleed A. Afifi_
 
-In phase 2, we will be connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests
+In this phase of the RESTy build, we will be adding some more fidelity to the application, including a menu, history, and an “in-progress” spinner.
+
+### Deployed version
+[Deployed on GitHub](https://waleedafifi-401-advanced-javascript.github.io/resty/)
 
 ### Setup
 ```
@@ -26,4 +29,4 @@ https://swapi.dev/api/people/
 
 #### UML
 
-![UML](./public/GitHub-assets/uml2.jpg)
+![UML](./public/GitHub-assets/uml3.jpg)

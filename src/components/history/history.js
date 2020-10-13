@@ -1,5 +1,6 @@
 
 import React from 'react';
+// import request from 'superagent';
 import './history.scss';
 
 
@@ -15,6 +16,9 @@ function History(props) {
     //apiCall is obj with method, url, data. booyah!
 
     props.historyHandler(apiCall);
+    apiCall.data = apiCall.data ? JSON.stringify(apiCall.data) : undefined;
+    props.handler(apiCall);
+
   }
 
   return (
@@ -24,9 +28,7 @@ function History(props) {
       <ul>
         {
           Object.keys(calls).map(key => 
-
             <li key={key}>
-
               <span className="method-span">
                 {props.calls[key].method}
               </span>
@@ -37,10 +39,7 @@ function History(props) {
           )
         }
       </ul>
-
-
     </aside>
-
   )
 }
 

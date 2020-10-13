@@ -10,7 +10,7 @@ class Form extends React.Component {
 
     const method = props.request.method || 'get';
     const url = props.request.url || '';
-    const data = props.request.data;
+    const data = props.request.data ? JSON.stringify(props.request.data) : '';
 
 
     this.state = {
@@ -18,7 +18,7 @@ class Form extends React.Component {
         method,
         url,
         data,
-        headers: {'accept': 'application/json'}
+        headers: {'Content-Type': 'application/json'}
       }
     };
 

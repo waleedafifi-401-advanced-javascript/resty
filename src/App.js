@@ -61,20 +61,33 @@ class App extends React.Component {
   fetchResults = async (request) => {
 
     // i think i need to drill into request
-    console.log('REQUEST IN FETCHRESULTS IN APP:', request);
+    console.log('REQEST IN FETCHRESULTUS IN APP:', request);
 
     this.toggleLoading();
     this.updateRequest(request);
 
-    // let response = await axios(request);
+    let response = await axios(request);
 
-    fetch(request.url,{method: request.method,headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-      body: JSON.stringify(request.data)}).then(res => res.json()).then(response => {
+    // fetch(request.url,{method: request.method,headers: {
+    //   // 'Accept': 'application/json',
+    //   'Content-Type': 'application/json',
+    //   'Access-Control-Allow-Origin':'*' 
+    // },
+    //   body: JSON.stringify(request.data), mode:"cors"}).then(res => res.json()).then(response => {
       
-          console.log('RESPONSE FROM AXIOS IN FETCHRESULTS:', response);
+    //       console.log('RESPONSE FROM AXIOS IN FETCHRESULTS:', response);
+    //       // console.log('COUNT IN RESPONSE FROM AXIOS IN FETCHRESULTS:', response.data.count);
+      
+    //       setTimeout( () => {
+    //         this.toggleLoading();
+    //       }, 3000);
+    //       this.updateHistory(request);
+    //       // this.updateResults(response.headers, response.data.count, response.body.results);
+    //     this.updateResults(request.headers, response.count, response.results ? response.results : response.result); 
+    // });
+  
+
+              console.log('RESPONSE FROM AXIOS IN FETCHRESULTS:', response.data);
           // console.log('COUNT IN RESPONSE FROM AXIOS IN FETCHRESULTS:', response.data.count);
       
           setTimeout( () => {
@@ -82,8 +95,7 @@ class App extends React.Component {
           }, 3000);
           this.updateHistory(request);
           // this.updateResults(response.headers, response.data.count, response.body.results);
-        this.updateResults(response.headers, response.count, response.results); 
-    });
+        this.updateResults(response.headers, response.data.count ? response.data.count : 0, response.data.results ? response.data.results : response.data.result); 
 
 
   }
@@ -94,7 +106,7 @@ class App extends React.Component {
       <Header />
       {/* <Form handler={this.handleForm}/> */}
       <Form request={this.state.request} handler={this.fetchResults} />
-      <History historyHandler={this.updateRequest} calls={this.state.history}/>
+      <History historyHandler={this.updateRequest} handler={this.fetchResults} calls={this.state.history}/>
       <Results loading={this.state.loading} count={this.state.count} results={this.state.results} headers={this.state.headers} />
       <Footer />
     </div>
