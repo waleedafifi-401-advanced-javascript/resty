@@ -26,19 +26,23 @@ class Form extends React.Component {
   
   handleMethodClick = event => {
     event.preventDefault();
-    let method = event.target.value;
+
+    console.log(event.target.id);
+    let method = event.target.id;
     const newRequest = { ...this.state.request, method };
     this.setState({request: newRequest});
   }
   
   handleURLChange = event => {
     let url = event.target.value;
+    console.log(url);
     const newRequest = { ...this.state.request, url};
     this.setState({request: newRequest});
   }
 
   handleBodyChange = event => {
     let data = event.target.value;
+
     console.log('DATA IN handleBodyChange IN FORM.JS:', data);
     const newRequest = {...this.state.request, data};
     this.setState({request: newRequest});
@@ -49,6 +53,13 @@ class Form extends React.Component {
 
     event.preventDefault();
 
+    // console.log(this);
+
+    console.log('+++++ state.req in HANDLESUBMIT FORM>JS:', this.state.request);
+
+    this.state.request.url = this.state.request.url ? this.state.request.url : this.props.request.url;
+    this.state.request.data = this.state.request.data ? this.state.request.data : this.props.request.data;
+
     console.log('+++++ state.req in HANDLESUBMIT FORM>JS:', this.state.request);
 
     this.props.handler(this.state.request);
@@ -58,17 +69,28 @@ class Form extends React.Component {
 
   render() {
     return (<div className="App-form">
-      <ul>
-        <li><button value="get" onClick={this.handleMethodClick}>GET</button></li>
-        <li><button value="post" onClick={this.handleMethodClick}>POST</button></li>
-        <li><button value="put" onClick={this.handleMethodClick}>PUT</button></li>
-        <li><button value="delete" onClick={this.handleMethodClick}>DELETE</button></li>
-      </ul>
-
       <form onSubmit={this.handleSubmit}>
-      <textarea name="data" onChange={this.handleBodyChange} defaultValue={this.state.request.data} />
-        <input type="text" name="url" defaultValue={this.state.request.url} placeholder="URL" onChange={this.handleURLChange}/>
-        <button>Go!</button>
+        <div>
+          <input type="text" name="url" placeholder="http://api.url.here" defaultValue={this.props.request.url} onChange={this.handleURLChange}/>
+          <button>GO!</button>
+        </div>
+
+        <div className="methods">
+            <span className={`method ${this.props.request.method === 'get' ? 'active' : ''}`} id="get" onClick={this.handleMethodClick}>GET</span>
+            <span className={`method ${this.props.request.method === 'post' ? 'active' : ''}`} id="post" onClick={this.handleMethodClick}>POST</span>
+            <span className={`method ${this.props.request.method === 'put' ? 'active' : ''}`} id="put" onClick={this.handleMethodClick}>PUT</span>
+            <span className={`method ${this.props.request.method === 'delete' ? 'active' : ''}`} id="delete" onClick={this.handleMethodClick}>DELETE</span>
+        {/* <ul>
+        <li><button className="method" value="get" onClick={this.handleMethodClick}>GET</button></li>
+        <li><button className="method" value="post" onClick={this.handleMethodClick}>POST</button></li>
+        <li><button className="method" value="put" onClick={this.handleMethodClick}>PUT</button></li>
+        <li><button className="method" value="delete" onClick={this.handleMethodClick}>DELETE</button></li>
+      </ul> */}
+          <textarea name="data" onChange={this.handleBodyChange} defaultValue={this.state.request.data} />
+          </div>
+      
+        {/* <input type="text" name="url" defaultValue={this.state.request.url} placeholder="URL" onChange={this.handleURLChange}/> */}
+        {/* <button>Go!</button> */}
       </form>
 
     </div>)
