@@ -1,59 +1,123 @@
-@import '../base.scss';
+@import "../base.scss";
 
-.App-form {
+// .App-form {
+//   display: flex;
+//   flex-direction: column;
+//   background: $light-gray;
+//   // border-radius: .5em;
+//   // margin: .5em;
+//   padding: 1em;
+
+//   ul {
+//     list-style-type: none;
+//     display: flex;
+//     justify-content: flex-start;
+//     // flex: 1;
+
+//     li {
+//       margin: .5em;
+//     }
+//   }
+
+//   textarea {
+//     border-radius: .5em;
+//     height: 7em;
+//     width: 25em;
+//    }
+
+//    form {
+//     display: flex;
+//     justify-content: flex-end;
+//     flex: 1;
+
+//     input {
+//       flex: 1;
+//       border-radius: .5em;
+//       margin-right: .5em;
+//       margin-left: .5em;
+//       padding-left: 1em;
+//       border: none;
+//     }
+
+//     button {
+//       background: $go-button;
+//       border-radius: .5em;
+//       border: none;
+
+//       &:checked {
+//         background: #444;
+//         color: #fff;
+//       }
+//     }
+//   }
+
+//   p {
+//     min-height: 20vh;
+//     background-color: #F9F5F0;
+//     border-radius: .5em;
+//   }
+// }
+
+body form {
   display: flex;
   flex-direction: column;
-  background: $light-gray;
-  // border-radius: .5em;
-  // margin: .5em;
-  padding: 1em;
+}
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    // flex: 1;
+body form div {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
 
-    li {
-      margin: .5em;
-    }
-  }
-  
-  textarea {
-    border-radius: .5em;
-    height: 7em;
-    width: 25em;
-   }
+body form input[type="text"] {
+  background: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 1.1rem;
+  margin: 0;
+  outline: none;
+  padding: 0.25rem;
+  transition: all 0.4s ease-out;
+  width: 80%;
+}
 
-   form {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-
-    input {
-      flex: 1;
-      border-radius: .5em;
-      margin-right: .5em;
-      margin-left: .5em;
-      padding-left: 1em;
-      border: none;
-    }
-
-    button {
-      background: $go-button;
-      border-radius: .5em;
-      border: none;
-
-      &:checked {
-        background: #444;
-        color: #fff;
-      }
-    }
+body form input[type=text]:focus {
+  background: #fff;
+  border-bottom: 2px solid #00f;
   }
 
-  p {
-    min-height: 20vh;
-    background-color: #F9F5F0;
-    border-radius: .5em;
+body form button {
+  margin-left: 3rem;
+}
+
+body form .methods {
+  display: flex;
+}
+
+body form .methods ul li {
+  display: inline-block;
+}
+
+body form .methods ul li button{
+  margin-left: 0;
+}
+
+body form .methods .method {
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  padding: 0 1rem;
+  line-height: 2rem;
+  height: 2rem;
+
+  &:hover, &.active {
+    background: #fff;
   }
 }
+
+body form .methods textarea {
+  flex: 1 1;
+  height: 3rem;
+  }

@@ -1,11 +1,63 @@
-.App-history {
-    border: solid 2px #302D3C;
-    margin: .5em;
-    min-height: 20vmin;
-    border-radius: .3em;
-  }
+// .App-history {
+//     border: solid 2px #302D3C;
+//     margin: .5em;
+//     min-height: 20vmin;
+//     border-radius: .3em;
+//   }
   
-  .App-history > h4 {
-    margin: .5em;
-  }
+//   .App-history > h4 {
+//     margin: .5em;
+//   }
   
+main {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+
+  .history {
+    margin: 1rem;
+    height: calc(100vh - 15rem);
+    overflow: auto;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 2rem;
+
+      li {
+        padding: .5rem 0;
+
+        .method {
+          border-radius: 5px;
+          color: #fff;
+          display: inline-block;
+          font-weight: bold;
+          padding: .25rem 1rem;
+
+          &.get {
+            background: blue;
+          }
+
+          &.delete {
+            background: red;
+          }
+
+          &.put {
+            background: goldenrod;
+          }
+
+          &.post {
+            background: green;
+          }
+        }
+
+        .url {
+          background: inherit;
+          border: none;
+          cursor: pointer;
+          padding: .5rem 1rem;
+        }
+      }
+    }
+  }
+}

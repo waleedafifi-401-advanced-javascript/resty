@@ -1,14 +1,62 @@
-@import '../base.scss';
+@import "../base.scss";
 
-.App-header {
-  background-color: #302D3C;
-  // margin: .3em;
-  // border-radius: .5em;
-  min-height: 20vh;
+// .App-header {
+//   background-color: #302D3C;
+//   // margin: .3em;
+//   // border-radius: .5em;
+//   min-height: 20vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: #F9F5F0;
+// }
+
+body header {
+  background: #111;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #F9F5F0;
+}
+
+body header h1 {
+  color: #eee;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+body header nav {
+  background: #550202;
+}
+
+body header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body header nav ul li {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+body header nav ul li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+body header nav ul li a:after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body header nav ul li:hover {
+  background: rgba($color: #fff, $alpha: 0.5);
 }

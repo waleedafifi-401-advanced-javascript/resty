@@ -1,0 +1,11 @@
+@import '../base.scss';
+
+aside div div {
+  cursor: pointer;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+aside div div:hover {
+  background: #efefef;
+}

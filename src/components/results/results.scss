@@ -1,23 +1,23 @@
-@import '../base.scss';
+@import "../base.scss";
 
-.App-results {
-    border: solid 2px $dark-gray;
-    margin: .5em;
-    min-height: 50vmin;
-    border-radius: .3em;
-  }
-  
-  .App-results > h3 {
-    color: #302D3C;
-    text-align: left;
-    margin-left: .5em;
-  }
-  
-  .App-results > div {
-    color: #302D3C;
-    text-align: left;
-    margin-left: .5em;
-  }
+// .App-results {
+//     border: solid 2px $dark-gray;
+//     margin: .5em;
+//     min-height: 50vmin;
+//     border-radius: .3em;
+//   }
+
+//   .App-results > h3 {
+//     color: #302D3C;
+//     text-align: left;
+//     margin-left: .5em;
+//   }
+
+//   .App-results > div {
+//     color: #302D3C;
+//     text-align: left;
+//     margin-left: .5em;
+//   }
 
   #overlay {
         /* width: 100%; */
@@ -39,7 +39,7 @@
     font-size: 50px;
     height: 50px;
     width: 50px;
- 
+
 }
 .spin-normal {
     font-size: 35px;
@@ -73,7 +73,7 @@ svg.tea {
     stroke-dashoffset: 9;
     animation: steamSmall 2s infinite;
   }
-  
+
   @keyframes swing {
     50% {
       transform: rotate(-3deg);
@@ -103,4 +103,46 @@ svg.tea {
       opacity: 0;
     }
   }
-  
+
+body main .history {
+  margin: 1rem;
+  height: calc(100vh - 15rem);
+  overflow: none;
+}
+
+body main .history ul li {
+  padding: 0.5rem 0;
+}
+
+body main .history ul li .method.get {
+  background: #00f;
+}
+
+body main .history ul li .method {
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+}
+
+body main .history ul li .url {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+body main .history ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem;
+}
+
+body h2 {
+  margin: 0 2rem;
+}
+
+body .react-json-view {
+  margin: 1rem 2rem;
+}

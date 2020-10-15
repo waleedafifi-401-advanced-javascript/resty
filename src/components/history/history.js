@@ -17,29 +17,26 @@ function History(props) {
 
     props.historyHandler(apiCall);
     apiCall.data = apiCall.data ? JSON.stringify(apiCall.data) : undefined;
-    props.handler(apiCall);
+    props.updateRequest(apiCall);
+    // props.handler(apiCall);
 
   }
 
   return (
-    <aside className="App-history">
-      <h4>Search History</h4>
-
       <ul>
         {
           Object.keys(calls).map(key => 
             <li key={key}>
-              <span className="method-span">
+              <span className={`method ${props.calls[key].method}`}>
                 {props.calls[key].method}
               </span>
-              <button className="url-button" onClick={() => loadRequest(props.calls[key])}>
+              <button className="url" onClick={() => loadRequest(props.calls[key])}>
                 {props.calls[key].url}
               </button>
             </li>
           )
         }
       </ul>
-    </aside>
   )
 }
 
